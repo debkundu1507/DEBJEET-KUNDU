@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First JavaScript Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        #big {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        #first, #second {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        label, input {
+            display: block;
+            margin: 10px auto;
+            font-size: 16px;
+            text-align: left;
+        }
+        input[type="number"] {
+            padding: 8px;
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="big">
+        <h1>First JavaScript Page</h1>
+        <div id="first">
+            <p id="para"></p>
+            <button type="button" onclick='document.getElementById("para").innerHTML= "Good!!!!"'>CLICK HERE!!</button>
+        </div>
+        <div id="second">
+            <form id="calc">
+                <label for="fnum">Enter first number:</label>
+                <input type="number" id="fnum" name="fnum">
+                <label for="snum">Enter second number:</label>
+                <input type="number" id="snum" name="snum">
+                <label for="opp">Enter the operation to be executed: 1. Add 2. Subtract 3. Multiply 4. Divide</label>
+                <input type="number" id="opp" name="opp">
+                <button type="button" onclick="myFunction()">ANSWER</button>
+            </form>
+        </div>
+        <p id="add"></p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = parseInt(document.getElementById("fnum").value);
+            var y = parseInt(document.getElementById("snum").value);
+            var o = parseInt(document.getElementById("opp").value);
+            var z;
+            switch (o) {
+                case 1:
+                    z = x + y;
+                    break;
+                case 2:
+                    z = x - y;
+                    break;
+                case 3:
+                    z = x * y;
+                    break;
+                case 4:
+                    z = x / y;
+                    break;
+                default:
+                    z = "No such operator found";
+            }
+            document.getElementById("add").innerHTML = z;
+        }
+    </script>
+</body>
+</html>
+

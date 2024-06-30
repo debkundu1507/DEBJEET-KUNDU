@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, button, p {
+            display: block;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <label for="array">Enter elements (comma separated):</label>
+    <input type="text" id="arr"><br>
+    <button onclick="length()">Calculate Length</button>
+    <button onclick="sum()">Calculate Sum</button>
+    <button onclick="reverse()">Reverse Array</button>
+    <button onclick="sort()">Sort Array (Ascending Order)</button>
+    <button onclick="max()">Maximum Element of Array</button>
+    <p id="len" class="result"></p>
+    <p id="sum" class="result"></p>
+    <p id="rev" class="result"></p>
+    <p id="sort" class="result"></p>
+    <p id="max" class="result"></p>
+</div>
+
+<script>
+function getarrayfrominput() {
+    let input = document.getElementById("arr").value.trim();
+    if (input == "") return [];
+    let array = input.split(",").map(num => parseInt(num));
+    return array;
+}
+
+function length() {
+    let ar = getarrayfrominput();
+    let l = ar.length;
+    document.getElementById("len").innerHTML = "Length: " + l;
+}
+
+function sum() {
+    let ar = getarrayfrominput();
+    let sum = 0;
+    for (let i = 0; i < ar.length; i++) {
+        sum += ar[i];
+    }
+    document.getElementById("sum").innerHTML = "Sum: " + sum;
+}
+
+function reverse() {
+    let ar = getarrayfrominput();
+    let revarr = [];
+    for (let i = ar.length - 1; i >= 0; i--) {
+        revarr.push(ar[i]);
+    }
+    document.getElementById("rev").innerHTML = "Reversed Array: " + revarr.join(", ");
+}
+
+function sort() {
+    let ar = getarrayfrominput();
+    let sortarr = ar.slice().sort((a, b) => a - b);
+    document.getElementById("sort").innerHTML = "Sorted Array: " + sortarr.join(", ");
+}
+
+function max() {
+    let ar = getarrayfrominput();
+    let max = ar[0];
+    for (let i = 1; i < ar.length; i++) {
+        if (ar[i] > max) {
+            max = ar[i];
+        }
+    }
+    document.getElementById("max").innerHTML = "Maximum Element: " + max;
+}
+</script>
+
+</body>
+</html>
