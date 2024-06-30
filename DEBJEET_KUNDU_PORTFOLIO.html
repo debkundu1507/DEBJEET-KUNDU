@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debjeet Skills Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .intro-section, .skills-section, .projects-section, .education-section, .contact-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .intro-section p, .education-section p {
+            font-size: 1.2em;
+        }
+        .skills-section h2, .projects-section h2, .education-section h2, .contact-section h2 {
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        .skills-list, .projects-list, .education-list {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .skills-list div, .projects-list div, .education-list div {
+            flex: 1;
+            max-width: 300px;
+        }
+        .hard-skills, .soft-skills, .project, .education {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hard-skills {
+            background-color: #f44336;
+            color: white;
+        }
+        .soft-skills {
+            background-color: #2196F3;
+            color: white;
+        }
+        .skills-list ul, .projects-list ul, .education-list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li, .projects-list li, .education-list li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .skills-list li strong, .projects-list li strong, .education-list li strong {
+            font-size: 1.4em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-section label {
+            margin: 10px 0 5px;
+        }
+        .contact-section input, .contact-section textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .contact-section input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .contact-section input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Debjeet Kundu</h1>
+    </div>
+    
+    <section class="intro-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Debjeet Kundu, a passionate and dedicated professional with a strong background in project management, digital marketing, and DBMS. I thrive in dynamic environments and am always eager to learn and adapt to new challenges.</p>
+    </section>
+    
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="hard-skills">
+                <ul>
+                    <li><strong>Hard Skills</strong></li>
+                    <li>Project Management</li>
+                    <li>DBMS</li>
+                    <li>Digital Marketing</li>
+                    <li>Accounting</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <ul>
+                    <li><strong>Soft Skills</strong></li>
+                    <li>Teamwork</li>
+                    <li>Negotiating</li>
+                    <li>Adaptability</li>
+                    <li>Critical Thinking</li>
+                    <li>Flexibility</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project">
+                <ul>
+                    <li><strong>Calculator</strong></li>
+                    <a href="file:///C:/Users/Debanik%20Kundu/Desktop/Calculator.html">View Project</a>
+                </ul>
+            </div>
+            <div class="project">
+                <ul>
+                    <li><strong>First JS File</strong></li>
+                    <a href="file:///C:/Users/Debanik%20Kundu/Desktop/First_JS_File.html">View Project</a>
+                </ul>
+            </div>
+            <div class="project">
+                <ul>
+                    <li><strong>Email Login Form</strong></li>
+                    <a href="file:///C:/Users/Debanik%20Kundu/Desktop/Form_Validation.html">View Project</a>
+                </ul>
+            </div>
+	    <div class="project">
+                <ul>
+                    <li><strong>Array Operations</strong></li>
+                    <a href="file:///C:/Users/Debanik%20Kundu/Desktop/Array_Operations.html">View Project</a>
+                </ul>
+            </div>		
+        </div>
+    </section>
+    
+    <section class="education-section">
+        <h2>Educational Qualifications</h2>
+        <div class="education-list">
+            <div class="education">
+                <ul>
+                    <li><strong>HSC</strong></li>
+                    <li>Completed HSC in Computer Science</li>
+                    <li>CBSE Board, 2023</li>
+                </ul>
+            </div>
+            <div class="education">
+                <ul>
+                    <li><strong>Engineering</strong></li>
+                    <li>BTech. in IT</li>
+                    <li>SAKEC, 2027</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+        <p>Email: debjeet.17894@sakec.ac.in</p>
+        <p>Phone: +91 99675900XX</p>
+    </section>
+</body>
+</html>
