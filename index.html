@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>First HTML Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        ul, ol, dl {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .important {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>First HTML Tutorial</h1>
+    <p>Here we will<br>learn about<br>HTML.</p>
+    
+    <h2>Beginning</h2>
+    
+    <table>
+        <tr>
+            <th colspan="4">Student Info</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>Debjeet</td>
+            <td>19</td>
+            <td>India</td>
+            <td>Btech</td>
+        </tr>
+        <tr>
+            <td>Krish</td>
+            <td>20</td>
+            <td>USA</td>
+            <td>Ph.D</td>
+        </tr>
+        <tr>
+            <td>Aryan</td>
+            <td>19</td>
+            <td>Ireland</td>
+            <td>MBA</td>
+        </tr>
+    </table>
+    
+    <ol>
+        <li class="important">Start</li>
+        <li>Input</li>
+        <li>Process</li>
+        <li>Output</li>
+        <li>Stop</li>
+    </ol>
+    
+    <dl>
+        <dt class="important">Start</dt>
+        <dd>Begin the code</dd>
+        <dt>Input</dt>
+        <dd>Input from the user</dd>
+        <dt>Process</dt>
+        <dd>Process the input</dd>
+        <dt>Output</dt>
+        <dd>Output the result</dd>
+        <dt>Stop</dt>
+        <dd>End the process</dd>
+    </dl>
+
+    <h1>Go to Google, click the below link</h1>
+    <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiIluLVxPiGAxUlyzgGHZsqA_AQPAgJ">
+        <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/640x427/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24016885/STK093_Google_04.jpg" alt="Google logo" style="width: 200px;">
+    </a>
+    
+    <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+    
+    
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label>Favorite language:</label>
+        <input type="checkbox" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        
+        <input type="checkbox" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        
+        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type here..."></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Portfolio</h2>
+    <p>Check out my <a href="file:///C:/Users/Debanik%20Kundu/Desktop/HTML/DEBJEET_KUNDU_PORTFOLIO.html">portfolio</a> to see more about my projects and experience.</p>	
+</body>
+</html>
